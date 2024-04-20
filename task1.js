@@ -6,11 +6,12 @@ function calculateDiscountedPrice(productsArray, discount) {
     return {...product, discountedPrice};
   });
   
-  // console.log(productsArray);
   return discountedProducts;
 }
-
-
+// --------------------
+// debug DiscountPrice
+// console.log(calculateDiscountedPrice([{name:'biscuit', price: 10}, {name:'ice cream', price:25}], 5));
+// --------------------
 
 function calculateTotalPrice (productsArray) {
   let totalPrice = 0;
@@ -19,10 +20,8 @@ function calculateTotalPrice (productsArray) {
       totalPrice += product.price;
   });
 
-  // console.log(productsArray);
   return totalPrice;
 }
 
 
-// console.log(calculateDiscountedPrice([{name:'biscuit', price: 10}, {name:'ice cream', price:25}], 5));
 // console.log(calculateTotalPrice([{name:'biscuit', price: 10}, {name:'ice cream', price:25}]));

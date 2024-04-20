@@ -27,3 +27,9 @@ Repository focusing on Studying node with the focus immutability, pure functions
 - Implement a lazy evaluation function called lazyMap that takes an array and a mapping function. The function should return a lazy generator that applies the mapping function to each element of the array one at a time.
 
 - Create a lazy generator function called fibonacciGenerator that generates Fibonacci numbers one at a time using lazy evaluation.
+
+# How to run
+To run each task, simply enter: *node task[number].js* in the command line, like the following example: 
+```terminal
+node task1.js
+```
