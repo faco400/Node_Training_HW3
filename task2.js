@@ -6,14 +6,15 @@ const getFullName = person => person.firstName + ' ' + person.lastName;
 // ----------------------
 
 //unique words
-const splitWords = text => text.split(' ')
+const splitWords = text => text.toLowerCase().match((/\b\w+\b/g))
 const removeDuplicates = wordsArray => [...new Set(wordsArray)];
 const sortArray = unsortedArray => unsortedArray.sort()
 const filterUniqueWords = stringText => sortArray(removeDuplicates(splitWords(stringText)))
 
 // ---------------------
 // debug unique words
-// console.log(filterUniqueWords('Hi I Am Vini Vini I Am'))
+// console.log(filterUniqueWords('Hi I Am Vini Vini I Am'));
+// console.log(filterUniqueWords('hello HellO hello !!! '));
 // ---------------------
 
 //get average grades
